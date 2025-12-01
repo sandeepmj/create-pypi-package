@@ -8,6 +8,7 @@ Creating a package for PyPi is not difficult but it is exacting and you must do 
 
 
 ---
+## Step 0.5 Create a repo on Github and clone it to your dataprojects folder.
 
 ## Step 1: Create Project Structure
 
@@ -23,6 +24,12 @@ my_functions_demo/
 ├── README.md
 └── LICENSE
 ```
+
+| Platform | Name | Purpose |
+|----------|------|---------|
+| **GitHub repo** | `my_functions_demo` (your choice) | Store your source code |
+| **PyPI package** | `my_functions_demo_sandeepj` | What people `pip install` |
+| **Python import** | `my_functions_demo` | What's in the code |
 
 ---
 
