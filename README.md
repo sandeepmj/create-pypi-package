@@ -259,8 +259,4 @@ pip install my_functions_demo_sandeepj
 - Users don't need to import `time` or `random` - these are handled inside your package
 - Both functions will work immediately after pip install with no additional setup
 
----
 
-## Congratulations! 🎉
-
-Your package is now available worldwide via pip!
