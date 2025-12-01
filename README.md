@@ -2,7 +2,9 @@
 
 At some point you realize that you are using the same functions for different coding projects. For example you might use a ```timer``` function to slow down your scrape.
 
-Instead of copying and pasting the timer code every time, let's simply pip install it 
+Instead of copying and pasting the timer code every time, let's simply pip install it.
+
+Creating a package for PyPi is not difficult but it is exacting and you must do each of these steps exactly as detailed:
 
 
 ---
