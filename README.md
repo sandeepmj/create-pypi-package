@@ -170,6 +170,39 @@ Register for both accounts:
 - **Test PyPI**: [https://test.pypi.org/account/register/](https://test.pypi.org/account/register/)
 - **Real PyPI**: [https://pypi.org/account/register/](https://pypi.org/account/register/)
 
+### Creating API Tokens (Recommended)
+
+API tokens are more secure than passwords. Here's how to set them up:
+
+1. **For PyPI:**
+   - Go to [https://pypi.org/manage/account/token/](https://pypi.org/manage/account/token/)
+   - Click "Add API token"
+   - Give it a name (e.g., "Upload token")
+   - Set scope to "Entire account" (or specific project after first upload)
+   - Copy the token (starts with `pypi-`)
+   - **Save it securely - you won't see it again!**
+
+2. **For Test PyPI:**
+   - Go to [https://test.pypi.org/manage/account/token/](https://test.pypi.org/manage/account/token/)
+   - Follow same steps as above
+
+3. **Using the token:**
+   - When prompted for username, enter: `__token__`
+   - When prompted for password, paste your API token (including the `pypi-` prefix)
+
+**Tip:** You can also store tokens in a `~/.pypirc` file:
+
+```ini
+[testpypi]
+  username = __token__
+  password = pypi-YOUR-TEST-TOKEN-HERE
+
+[pypi]
+  username = __token__
+  password = pypi-YOUR-REAL-TOKEN-HERE
+```
+
+
 ---
 
 ## Step 9: Upload to Test PyPI (Recommended)
